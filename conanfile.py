@@ -34,8 +34,6 @@ class LibnameConan(ConanFile):
     source_subfolder = "source_subfolder"
     build_subfolder = "build_subfolder"
 
-    requires = None
-
     def configure(self):
         if self.settings.os == 'Windows':
             del self.options.fPIC
